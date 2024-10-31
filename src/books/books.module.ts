@@ -4,8 +4,8 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { BooksService } from './books.service';
 import { BooksController } from './books.controller';
 import { Book, BookSchema } from './schema/books.schema';
-import { AuthorsModule } from './';
-import { GenresModule } from '../genres/genre.module';
+import { AuthorsModule } from '../../authors/author.module';
+import { GenresModule } from '../../genres/genre.module';
 
 @Module({
   imports: [
@@ -18,3 +18,5 @@ import { GenresModule } from '../genres/genre.module';
   exports: [BooksService],
 })
 export class BooksModule {}
+
+
